@@ -1,0 +1,23 @@
+{
+  "name": "spotify-proxy",
+  "version": "1.0.0",
+  "description": "A sample spotify proxy app for CS-554",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stevens-CS554/spotify-proxy.git"
+  },
+  "author": "Phil Barresi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Stevens-CS554/spotify-proxy/issues"
+  },
+  "homepage": "https://github.com/Stevens-CS554/spotify-proxy#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
