@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const port = process.env.PORT || 3000;
 const axios = require("axios");
+const cors = require("cors");
 const accountInstance = axios.create({
   baseURL: "https://accounts.spotify.com/api/",
   timeout: 1000
@@ -11,14 +12,7 @@ const apiInstance = axios.create({
   timeout: 1000
 });
 
-app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
+app.use(cors());
 
 app.use("/api/token", async (req, res) => {
   try {
