@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Stevens-CS554/spotify-proxy#readme",
   "dependencies": {
+    "axios": "^0.17.1",
     "express": "^4.16.2"
   }
 }
